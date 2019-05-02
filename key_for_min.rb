@@ -4,17 +4,16 @@ require 'pry'
 
 def key_for_min_value(hash)
   min_key = nil 
-  hash.each_with_index do |(key, value), index|
+  hash.each do |key, value|
     
-   if index == 0 
+   if min_key == nil 
      min_key = key
    end 
-   
     if value <= hash[min_key]
       min_key = key 
     end
   end
-  binding.pry 
+ # binding.pry 
   min_key
 end 
 
