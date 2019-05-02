@@ -9,7 +9,7 @@ def key_for_min_value(hash)
    if index == 0 
      min_key = key
    end 
-   binding.pry 
+  # binding.pry 
     if value <= hash[min_key]
       min_key = key 
     end 
