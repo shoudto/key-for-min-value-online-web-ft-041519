@@ -6,6 +6,9 @@ def key_for_min_value(hash)
   min_key = hash.keys[0]
   hash.each do |key, value| 
     if value <= hash[min_key]
+      min_key = key 
+    end 
   end 
+  min_key
 end 
 
