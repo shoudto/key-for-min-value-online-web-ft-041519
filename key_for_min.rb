@@ -5,8 +5,11 @@ require 'pry'
 def key_for_min_value(hash)
   
   hash.each_with_index do |(key, value), index|
-    binding.pry 
-    min_key = key if index == 0 
+    
+   if index == 0 
+     min_key = key
+   end 
+   binding.pry 
     if value <= hash[min_key]
       min_key = key 
     end 
